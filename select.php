@@ -9,7 +9,7 @@
 	}
 
 	$result = $connect -> query ("SELECT * FROM news
-									ORDER BY key_id DESC");
+					ORDER BY key_id DESC");
 	while ($row = $result->fetch_assoc()) {
 		print '<h1>'.$row['title'].'</h1>';
 		print '<p style="text-align: justify;">'.$row['text'].'</p>';
